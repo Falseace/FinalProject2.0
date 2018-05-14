@@ -1,0 +1,23 @@
+#BlueJ class context
+comment0.target=EzImage
+comment1.params=
+comment1.target=EzImage()
+comment10.params=e
+comment10.target=void\ mouseReleased(java.awt.event.MouseEvent)
+comment2.params=x\ y\ w\ h
+comment2.target=EzImage(int,\ int,\ int,\ int)
+comment3.params=x\ y\ w\ h\ s
+comment3.target=EzImage(int,\ int,\ int,\ int,\ java.lang.String)
+comment4.params=s
+comment4.target=void\ setImage(java.lang.String)
+comment5.params=g
+comment5.target=void\ paint(java.awt.Graphics)
+comment6.params=e
+comment6.target=void\ mouseClicked(java.awt.event.MouseEvent)
+comment7.params=e
+comment7.target=void\ mouseExited(java.awt.event.MouseEvent)
+comment8.params=e
+comment8.target=void\ mousePressed(java.awt.event.MouseEvent)
+comment9.params=e
+comment9.target=void\ mouseEntered(java.awt.event.MouseEvent)
+numComments=11
