@@ -3,8 +3,8 @@ import java.awt.*;
 public class Wall extends Tile{
     public Wall(int x,int y)
     {
-        super(x,y,10,10, Color.BLACK);
-        setVisible(false);
+        super(x,y,100,100, Color.BLACK);
+        setVisible(true);
     }
     public Wall(int x, int y, int w, int h,Color c)
     {
