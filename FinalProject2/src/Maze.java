@@ -17,7 +17,7 @@ public class Maze {
     public void makeMaze()
     {
         multi[1][1]=new Floor(side*(1+1),side*(1+1));
-        
+        multi[1][1].setPlayer(true);
         multi[2][1]=new Floor(side*(1+1),side*(2+1));
         multi[2][2]=new Floor(side*(2+1),side*(2+1));
         multi[3][2]=new Floor(side*(2+1),side*(3+1));
@@ -66,6 +66,29 @@ public class Maze {
             }
         }
         return J;
+    }
+    public void movement(int r, int c,int f)
+    {
+        if(multi[r][c]==new Wall(1,1))
+        {
+            multi[r][c].setPlayer(true);
+            if(f==1)
+            {
+                multi[r--][c].setPlayer(false);
+            }
+            else if(f==2)
+            {
+                multi[r++][c].setPlayer(false);
+            }
+            else if(f==3)
+            {
+                multi[r][c++].setPlayer(false);
+            }
+            else if(f==4)
+            {
+                multi[r][c--].setPlayer(false);
+            }
+        }
     }
     public int getHeight()
     {

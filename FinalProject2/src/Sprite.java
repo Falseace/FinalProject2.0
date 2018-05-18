@@ -13,6 +13,13 @@ public abstract class Sprite extends EzImage {
         rect = new Rectangle();
     }
 
+    public Sprite(int x, int y, int width, int height, String s) {
+        super(x,y,width,height,s);
+        dx=0;
+        dy=0;
+        rect = new Rectangle(x,y,width,height);
+    }
+
     //default constructor.  if used, all variables need to be added manually with setters
     public Sprite(){
         super();

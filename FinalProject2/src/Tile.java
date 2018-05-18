@@ -1,12 +1,21 @@
 import java.awt.*;
 
-public class Tile extends GameRectangle{
-    public Tile(int x, int y)
+public class Tile extends Sprite{
+    public Tile(int x, int y, String s)
     {
-        super(x,y,10,10, Color.black);
+        super(x,y,10,10,s);
     }
-    public Tile(int x, int y, int w, int h, Color c)
+    public Tile(int x, int y, int w, int h, String s)
     {
-        super(x,y,w,h,c);
+        super(x,y,w,h,s);
+    }
+
+    @Override
+    public void move() {
+
+    }
+    public void setPlayer(boolean b)
+    {
+
     }
 }
