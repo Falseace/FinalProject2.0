@@ -6,7 +6,7 @@ import java.awt.event.KeyListener;
 import static java.awt.event.KeyEvent.*;
 
 
-public class MazeGame extends JFrame implements KeyListener {
+public class MazeGame extends JFrame implements KeyListener  {
     private Maze m;
     private int Playerh, Playerc;
     public MazeGame() {
@@ -18,40 +18,70 @@ public class MazeGame extends JFrame implements KeyListener {
         repaint();
         Playerc = 1;
         Playerh = 1;
-        //addKeyListener(this) {
-
-       // }
+        setFocusable(true);
+        addKeyListener(this);
     }
 
     @Override
     public void keyTyped(KeyEvent e) {
-        if(e.getKeyCode()==VK_KP_UP)
-        {
-            m.movement(Playerh--, Playerc,2);
-        }
-        else if(e.getKeyCode()==VK_KP_DOWN)
-        {
-            m.movement(Playerh++, Playerc,1);
-        }
+        switch (e.getKeyCode()) {
 
-        else if(e.getKeyCode()==VK_KP_LEFT)
-        {
-            m.movement(Playerh, Playerc--,3);
-        }
-        else if(e.getKeyCode()==VK_KP_RIGHT)
-        {
-            m.movement(Playerh, Playerc++,4);
+
+            case KeyEvent.VK_UP:
+                m.movement(Playerh--, Playerc, 2);
+                System.out.println("UP");
+                break;
+
+            case KeyEvent.VK_DOWN:
+                m.movement(Playerh++, Playerc, 1);
+                System.out.println("Down");
+                break;
+
+            case KeyEvent.VK_LEFT:
+                m.movement(Playerh, Playerc--, 3);
+                System.out.println("Left");
+                break;
+
+            case KeyEvent.VK_RIGHT:
+                m.movement(Playerh, Playerc++, 4);
+                System.out.println("Right");
+                break;
+
         }
     }
 
-   @Override
-   public void keyPressed(KeyEvent e)
-   {
+    @Override
+    public void keyPressed(KeyEvent e) {
+        switch (e.getKeyCode()) {
 
-   }
+
+            case KeyEvent.VK_UP:
+                m.movement(Playerh--, Playerc, 2);
+                System.out.println("UP");
+                break;
+
+            case KeyEvent.VK_DOWN:
+                m.movement(Playerh++, Playerc, 1);
+                System.out.println("Down");
+                break;
+
+            case KeyEvent.VK_LEFT:
+                m.movement(Playerh, Playerc--, 3);
+                System.out.println("Left");
+
+            case KeyEvent.VK_RIGHT:
+                m.movement(Playerh, Playerc++, 4);
+                System.out.println("Right");
+                break;
+
+        }
+        this.repaint();
+    }
 
     @Override
     public void keyReleased(KeyEvent e) {
+
+
 
     }
 }
