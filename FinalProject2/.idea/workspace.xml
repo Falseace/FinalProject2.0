@@ -98,9 +98,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-2" />
-    <option name="width" value="1609" />
-    <option name="height" value="1167" />
+    <option name="x" value="1048" />
+    <option name="y" value="256" />
+    <option name="width" value="960" />
+    <option name="height" value="1040" />
   </component>
   <component name="ProjectView">
     <navigator proportions="" version="1">
