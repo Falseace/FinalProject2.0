@@ -46,7 +46,6 @@ public class MazeGame extends JFrame implements KeyListener  {
                 m.movement(Playerh, Playerc++, 4);
                 System.out.println("Right");
                 break;
-
         }
     }
 
@@ -58,20 +57,25 @@ public class MazeGame extends JFrame implements KeyListener  {
             case KeyEvent.VK_UP:
                 m.movement(Playerh--, Playerc, 2);
                 System.out.println("UP");
+                this.repaint();
                 break;
 
             case KeyEvent.VK_DOWN:
                 m.movement(Playerh++, Playerc, 1);
                 System.out.println("Down");
+                this.repaint();
                 break;
 
             case KeyEvent.VK_LEFT:
                 m.movement(Playerh, Playerc--, 3);
                 System.out.println("Left");
+                this.repaint();
+                break;
 
             case KeyEvent.VK_RIGHT:
                 m.movement(Playerh, Playerc++, 4);
                 System.out.println("Right");
+                this.repaint();
                 break;
 
         }

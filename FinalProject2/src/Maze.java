@@ -73,21 +73,26 @@ public class Maze {
         if(multi[r][c].getName().equalsIgnoreCase("Floor"))
         {
             multi[r][c].setPlayer(true);
+            System.out.println(r+" "+c);
             if(f==1)
             {
-                multi[r--][c].setPlayer(false);
+                multi[--r][c].setPlayer(false);
+                System.out.println(r+" "+c);
             }
             else if(f==2)
             {
-                multi[r++][c].setPlayer(false);
+                multi[++r][c].setPlayer(false);
+                System.out.println(r+" "+c);
             }
             else if(f==3)
             {
-                multi[r][c++].setPlayer(false);
+                multi[r][++c].setPlayer(false);
+                System.out.println(r+" "+c);
             }
             else if(f==4)
             {
-                multi[r][c--].setPlayer(false);
+                multi[r][--c].setPlayer(false);
+                System.out.println(r+" "+c);
             }
         }
     }
@@ -105,6 +110,5 @@ public class Maze {
         J.setVisible(true);
         m.movement(1,1,1);
         J.repaint();
-
     }
 }
