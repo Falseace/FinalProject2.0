@@ -66,28 +66,31 @@ public class Maze {
         multi[r][c].setPlayer(true);
     }
     }
-
+    public boolean isItem(int r, int c)
+    {
+        return multi[r][c].getItem();
+    }
 
     public boolean movement(int r, int c,int f)
     {
         System.out.println(multi[r][c].getName());
         if (multi[r][c].getName().equalsIgnoreCase("Floor")) {
             multi[r][c].setPlayer(true);
-            System.out.println(r + " " + c);
+
             if (multi[r][c].getItem()) {
                 System.out.println("You Win");
             } if (f == 1) {
                 multi[--r][c].setPlayer(false);
-                System.out.println(r + " " + c);
+
             } else if (f == 2) {
                 multi[++r][c].setPlayer(false);
-                System.out.println(r + " " + c);
+
             } else if (f == 3) {
                 multi[r][++c].setPlayer(false);
-                System.out.println(r + " " + c);
+
             } else if (f == 4) {
                 multi[r][--c].setPlayer(false);
-                System.out.println(r + " " + c);
+
             }
             return true;
         } else if (multi[r][c].getName().equalsIgnoreCase("wall")) {

@@ -24,70 +24,43 @@ public class MazeGame extends JFrame implements KeyListener  {
 
     @Override
     public void keyTyped(KeyEvent e) {
-        switch (e.getKeyCode()) {
 
 
-            case KeyEvent.VK_UP:
-                m.movement(Playerh--, Playerc, 2);
-                System.out.println("UP");
-                break;
-
-            case KeyEvent.VK_DOWN:
-                m.movement(Playerh++, Playerc, 1);
-                System.out.println("Down");
-                break;
-
-            case KeyEvent.VK_LEFT:
-                m.movement(Playerh, Playerc--, 3);
-                System.out.println("Left");
-                break;
-
-            case KeyEvent.VK_RIGHT:
-                m.movement(Playerh, Playerc++, 4);
-                System.out.println("Right");
-                break;
-        }
     }
 
     @Override
     public void keyPressed(KeyEvent e) {
-        switch (e.getKeyCode()) {
+        if(!m.isItem(Playerh,Playerc)) {
+            switch (e.getKeyCode()) {
 
 
-            case KeyEvent.VK_UP:
-                if(!m.movement(--Playerh, Playerc, 2))
-                {
-                    Playerh++;
-                }
-                System.out.println("UP");
-                break;
+                case KeyEvent.VK_UP:
+                    if (!m.movement(--Playerh, Playerc, 2)) {
+                        Playerh++;
+                    }
+                    break;
 
-            case KeyEvent.VK_DOWN:
-                if(!m.movement(++Playerh, Playerc, 1))
-                {
-                    Playerh--;
-                }
-                System.out.println("Down");
-                break;
+                case KeyEvent.VK_DOWN:
+                    if (!m.movement(++Playerh, Playerc, 1)) {
+                        Playerh--;
+                    }
+                    break;
 
-            case KeyEvent.VK_LEFT:
-                if(!m.movement(Playerh, --Playerc, 3))
-                {
-                    Playerc++;
-                }
-                System.out.println("Left");
-                break;
+                case KeyEvent.VK_LEFT:
+                    if (!m.movement(Playerh, --Playerc, 3)) {
+                        Playerc++;
+                    }
+                    break;
 
-            case KeyEvent.VK_RIGHT:
-                if(!m.movement(Playerh, ++Playerc, 4))
-                {
-                    Playerc--;
-                }
-                System.out.println("Right");
-                break;
+                case KeyEvent.VK_RIGHT:
+                    if (!m.movement(Playerh, ++Playerc, 4)) {
+                        Playerc--;
+                    }
+                    break;
 
+            }
+            this.repaint();
         }
-        this.repaint();
     }
 
     @Override
