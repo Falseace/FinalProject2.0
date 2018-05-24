@@ -4,6 +4,7 @@ import java.awt.event.KeyListener;
 
 public class Tile extends Sprite  {
     private String name;
+    private boolean b;
     public Tile(int x, int y, String s)
     {
         super(x,y,10,10,s);
@@ -25,5 +26,10 @@ public class Tile extends Sprite  {
     public void setPlayer(boolean b)
     {
 
+    }
+    public void setItem(boolean b){
+    }
+    public boolean getItem(){
+        return b;
     }
 }

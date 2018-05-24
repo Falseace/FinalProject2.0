@@ -34,6 +34,7 @@ public class Maze {
         multi[1][5] = new Floor(side * (5 + 1), side * (1 + 1));
         multi[4][5] = new Floor(side * (5 + 1), side * (4 + 1));
         multi[3][5] = new Floor(side * (5 + 1), side * (3 + 1));
+        multi[3][5].setItem(true);
         for (int i = 0; i < h; i++) {
             for (int j = 0; j < w; j++) {
                 if ((i == 0) || (j == 0) || (i == h - 1) || (j == w - 1)) {
@@ -70,33 +71,26 @@ public class Maze {
     public boolean movement(int r, int c,int f)
     {
         System.out.println(multi[r][c].getName());
-        if(multi[r][c].getName().equalsIgnoreCase("Floor"))
-        {
+        if (multi[r][c].getName().equalsIgnoreCase("Floor")) {
             multi[r][c].setPlayer(true);
-            System.out.println(r+" "+c);
-            if(f==1)
-            {
+            System.out.println(r + " " + c);
+            if (multi[r][c].getItem()) {
+                System.out.println("You Win");
+            } if (f == 1) {
                 multi[--r][c].setPlayer(false);
-                System.out.println(r+" "+c);
-            }
-            else if(f==2)
-            {
+                System.out.println(r + " " + c);
+            } else if (f == 2) {
                 multi[++r][c].setPlayer(false);
-                System.out.println(r+" "+c);
-            }
-            else if(f==3)
-            {
+                System.out.println(r + " " + c);
+            } else if (f == 3) {
                 multi[r][++c].setPlayer(false);
-                System.out.println(r+" "+c);
-            }
-            else if(f==4)
-            {
+                System.out.println(r + " " + c);
+            } else if (f == 4) {
                 multi[r][--c].setPlayer(false);
-                System.out.println(r+" "+c);
+                System.out.println(r + " " + c);
             }
             return true;
-        }else if(multi[r][c].getName().equalsIgnoreCase("wall"))
-        {
+        } else if (multi[r][c].getName().equalsIgnoreCase("wall")) {
             multi[r][c].setVisible(true);
         }
         return false;
