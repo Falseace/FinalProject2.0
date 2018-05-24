@@ -18,12 +18,12 @@
       <file leaf-file-name="Maze.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Maze.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="51">
-              <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+            <state relative-caret-position="-837">
+              <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
               <folding>
                 <element signature="e#2813#2814#0" expanded="true" />
                 <element signature="e#2857#2858#0" expanded="true" />
-                <marker date="1527191480358" expanded="true" signature="4017:4023" ph="{...}" />
+                <marker date="1527193540144" expanded="true" signature="4012:4018" ph="{...}" />
               </folding>
             </state>
           </provider>
@@ -52,7 +52,7 @@
       <file leaf-file-name="Floor.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Floor.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="442">
+            <state relative-caret-position="336">
               <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
               <folding />
             </state>
@@ -62,11 +62,9 @@
       <file leaf-file-name="Tile.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Tile.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="153">
-              <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-              <folding>
-                <marker date="1527190301648" expanded="true" signature="607:613" ph="{}" />
-              </folding>
+            <state relative-caret-position="0">
+              <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -74,7 +72,7 @@
       <file leaf-file-name="MazeGame.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/MazeGame.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="489">
+            <state relative-caret-position="251">
               <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
               <folding />
             </state>
@@ -312,9 +310,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
           <caret line="10" column="5" lean-forward="false" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
-          <folding>
-            <marker date="1527190301648" expanded="true" signature="607:613" ph="{}" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -343,7 +339,7 @@
           <folding>
             <element signature="e#2813#2814#0" expanded="true" />
             <element signature="e#2857#2858#0" expanded="true" />
-            <marker date="1527191480358" expanded="true" signature="4017:4023" ph="{...}" />
+            <marker date="1527193540144" expanded="true" signature="4012:4018" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -421,7 +417,7 @@
           <folding>
             <element signature="e#2813#2814#0" expanded="true" />
             <element signature="e#2857#2858#0" expanded="true" />
-            <marker date="1527191480358" expanded="true" signature="4017:4023" ph="{...}" />
+            <marker date="1527193540144" expanded="true" signature="4012:4018" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -499,7 +495,7 @@
           <folding>
             <element signature="e#2813#2814#0" expanded="true" />
             <element signature="e#2857#2858#0" expanded="true" />
-            <marker date="1527191480358" expanded="true" signature="4017:4023" ph="{...}" />
+            <marker date="1527193540144" expanded="true" signature="4012:4018" ph="{...}" />
           </folding>
         </state>
       </provider>
@@ -639,13 +635,11 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Tile.java">
+    <entry file="file://$PROJECT_DIR$/src/Floor.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="153">
-          <caret line="11" column="5" lean-forward="false" selection-start-line="11" selection-start-column="5" selection-end-line="11" selection-end-column="5" />
-          <folding>
-            <marker date="1527190301648" expanded="true" signature="607:613" ph="{}" />
-          </folding>
+        <state relative-caret-position="336">
+          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -657,17 +651,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/Floor.java">
+    <entry file="file://$PROJECT_DIR$/src/Tile.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="442">
-          <caret line="42" column="9" lean-forward="false" selection-start-line="42" selection-start-column="9" selection-end-line="42" selection-end-column="9" />
+        <state relative-caret-position="0">
+          <caret line="2" column="34" lean-forward="true" selection-start-line="2" selection-start-column="34" selection-end-line="2" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/MazeGame.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="489">
+        <state relative-caret-position="251">
           <caret line="66" column="20" lean-forward="true" selection-start-line="66" selection-start-column="20" selection-end-line="66" selection-end-column="20" />
           <folding />
         </state>
@@ -683,12 +677,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Maze.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="13" column="31" lean-forward="true" selection-start-line="13" selection-start-column="31" selection-end-line="13" selection-end-column="31" />
+        <state relative-caret-position="-837">
+          <caret line="45" column="9" lean-forward="false" selection-start-line="45" selection-start-column="9" selection-end-line="45" selection-end-column="9" />
           <folding>
             <element signature="e#2813#2814#0" expanded="true" />
             <element signature="e#2857#2858#0" expanded="true" />
-            <marker date="1527191480358" expanded="true" signature="4017:4023" ph="{...}" />
+            <marker date="1527193540144" expanded="true" signature="4012:4018" ph="{...}" />
           </folding>
         </state>
       </provider>

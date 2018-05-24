@@ -44,7 +44,6 @@ public class Maze {
                 }
             }
         }
-
     }
 
     public JFrame addMaze(JFrame J) {
@@ -80,6 +79,7 @@ public class Maze {
         multi[r][c].setPlayer(true);
     }
     }
+
     public boolean isItem(int r, int c)
     {
         return multi[r][c].getItem();
@@ -90,21 +90,16 @@ public class Maze {
         System.out.println(multi[r][c].getName());
         if (multi[r][c].getName().equalsIgnoreCase("Floor")) {
             multi[r][c].setPlayer(true);
-
             if (multi[r][c].getItem()) {
                 System.out.println("You Win");
             } if (f == 1) {
                 multi[--r][c].setPlayer(false);
-
             } else if (f == 2) {
                 multi[++r][c].setPlayer(false);
-
             } else if (f == 3) {
                 multi[r][++c].setPlayer(false);
-
             } else if (f == 4) {
                 multi[r][--c].setPlayer(false);
-
             }
             return true;
         } else if (multi[r][c].getName().equalsIgnoreCase("wall")) {
