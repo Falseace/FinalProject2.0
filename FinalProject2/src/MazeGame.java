@@ -59,6 +59,13 @@ public class MazeGame extends JFrame implements KeyListener  {
                     break;
 
             }
+
+            this.repaint();
+        }else
+        {
+            m.reset(this);
+            Playerc=1;
+            Playerh=1;
             this.repaint();
         }
     }

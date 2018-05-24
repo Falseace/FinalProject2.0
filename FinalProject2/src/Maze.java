@@ -59,7 +59,21 @@ public class Maze {
         }
         return J;
     }
-
+    public JFrame reset(JFrame J)
+    {
+        for (int i = 0; i < h; i++) {
+            for (int j = 0; j < w; j++) {
+                if (multi[i][j].getName().equalsIgnoreCase("wall")) {
+                    multi[i][j].setVisible(false);
+                } else {
+                    J.remove(multi[i][j]);
+                }
+            }
+        }
+        makeMaze();
+        addMaze(J);
+        return J;
+    }
     public void tese(int r, int c) {
     if(multi[r][c].getName().equalsIgnoreCase("Floor"))
     {
