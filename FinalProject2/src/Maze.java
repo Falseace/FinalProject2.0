@@ -67,7 +67,7 @@ public class Maze {
     }
 
 
-    public void movement(int r, int c,int f)
+    public boolean movement(int r, int c,int f)
     {
         System.out.println(multi[r][c].getName());
         if(multi[r][c].getName().equalsIgnoreCase("Floor"))
@@ -94,7 +94,9 @@ public class Maze {
                 multi[r][--c].setPlayer(false);
                 System.out.println(r+" "+c);
             }
+            return true;
         }
+        return false;
     }
     public int getHeight()
     {
