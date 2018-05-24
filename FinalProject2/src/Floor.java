@@ -10,6 +10,7 @@ public class Floor extends Tile {
         super(x,y,100,100, "BasketBall.jpg");
         player=false;
         name="Floor";
+        setVisible(false);
     }
     public Floor(int x, int y, int w, int h, String s)
     {
@@ -24,6 +25,7 @@ public class Floor extends Tile {
     @Override
     public void setPlayer(boolean b)
     {
+        setVisible(true);
         if(b)
         {
             this.setImage("SpriteCan.jfif");

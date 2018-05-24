@@ -95,6 +95,9 @@ public class Maze {
                 System.out.println(r+" "+c);
             }
             return true;
+        }else if(multi[r][c].getName().equalsIgnoreCase("wall"))
+        {
+            multi[r][c].setVisible(true);
         }
         return false;
     }

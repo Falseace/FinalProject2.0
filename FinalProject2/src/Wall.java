@@ -6,7 +6,7 @@ public class Wall extends Tile{
     {
         super(x,y,100,100, "TrumpWall.jfif");
         name="wall";
-        setVisible(true);
+        setVisible(false);
     }
     public Wall(int x, int y, int w, int h,String s)
     {
